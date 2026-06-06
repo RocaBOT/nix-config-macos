@@ -19,13 +19,14 @@
     }@inputs:
     let
       primaryUser = "homura";
+      host = "takemikazuchi";
     in
     {
-      darwinConfigurations."takemikazuchi" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations.${host} = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           ./darwin
-          ./hosts/takemikazuchi/configuration.nix
+          ./hosts/${host}/configuration.nix
         ];
         specialArgs = { inherit inputs self primaryUser; };
       };
