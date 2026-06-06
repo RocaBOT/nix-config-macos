@@ -16,6 +16,7 @@
       keepassxc
       iterm2
       vscodium
+      mpv
     ];
   };
 }
