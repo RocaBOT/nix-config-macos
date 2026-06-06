@@ -17,6 +17,7 @@
       iterm2
       vscodium
       mpv
+      signal-desktop
     ];
   };
 }
