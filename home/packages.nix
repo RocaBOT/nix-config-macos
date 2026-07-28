@@ -12,7 +12,7 @@
       nerd-fonts.fira-code
       nerd-fonts.fira-mono
       librewolf
-      freetube
+      # freetube # currently broken
       keepassxc
       iterm2
       vscodium

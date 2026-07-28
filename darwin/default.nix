@@ -21,6 +21,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+  # nixpkgs.config.allowInsecurePredicate = x: builtins.elem x.pname [ "librewolf" "librewolf-unwrapped" ];
 
   home-manager = {
     useGlobalPkgs = true;
